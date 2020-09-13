@@ -15,8 +15,9 @@ minima:
   # generate social links in footer
   social_links:
     # twitter: jekyllrb
-    github:  Juice007
-    google_analytics:  UA-177600566-1
+    github: Juice007
+    baidu_analytics: 89339696b84d840d06d524ff75407852
+    google_analytics: UA-177600566-1
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
