@@ -5,7 +5,11 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   铁盒里究竟装着什么？
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Analytics
+baidu_analytics: 89339696b84d840d06d524ff75407852
+google_analytics: UA-177600566-1
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -16,8 +20,6 @@ minima:
   social_links:
     # twitter: jekyllrb
     github: Juice007
-    baidu_analytics: 89339696b84d840d06d524ff75407852
-    google_analytics: UA-177600566-1
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
