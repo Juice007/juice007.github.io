@@ -16,7 +16,7 @@ Dart里最让我疑惑的事情就是异步编程了。在swift中，我们只�
 
 本文将向你展示一系列异步实现，会着重强调一些坑点，最后再给出这三个组件（Future、async、await）的用法总结
 
-## 什么是Future
+## 一、什么是Future
 
 Future是一个对象，表示异步操作的结果，可以有两种状态，未完成和已完成
 
@@ -32,7 +32,7 @@ Future<String> getWeatherForecast() {
 
 注意，在这里我们不需要使用`async`来表示异步函数
 
-## async和await
+## 二、async和await
 
 `async`和`await`是一组关键字，它们使异步操作看起来像是同步操作。为了理解这一点，先让我们看看如何通过回调处理异步操作的结果
 
@@ -74,7 +74,7 @@ fetchWeatherForecast: Partly cloudy
 
 可以看到代码很难预测，每个print语句都没按照定义的顺序打印。让我们看看async和await如何帮我们解决这个问题
 
-## 什么是async
+## 三、什么是async
 
 async只有两个功能
 
@@ -125,7 +125,7 @@ void noFuture() async {
 上面这段代码即使使用了async关键字也会被看做一个同步函数，我不知道这是一个bug还是背后有什么设计哲学。但至少应该意识到这一点
 **async关键字并不代表着异步函数**
 
-## 什么是await
+## 四、什么是await
 
 你可以把await看作是then的一个语法糖，它让异步操作看起来像是同步的
 await会等待Future完成后再执行后面的语句，这就让异步操作看起来像是同步的
@@ -242,7 +242,7 @@ end: main
 1、异步函数的特征是返回Future，而不是说有async关键字
 2、你可以尽情地像使用同步函数一样使用异步函数，因此使用时必须小心
 
-## Dart异步编程综述
+## 五、Dart异步编程综述
 
 1、异步函数是一个返回Future类型的函数
 2、把await放在异步函数前，等待Future结果返回后才会执行后续的代码
